@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link rel=StyleSheet href="./css/index.css" type="text/css"/>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
+    <div class="bgDiv">
+      <div class="innerText" style="-webkit-app-region: drag;">
+        By default, the frameless window is non-draggable. Apps need to specify -webkit-app-region: drag in CSS to tell Electron which regions are draggable (like the OS's standard titlebar).
+      </div>
+      <img id="settingsButton" src="./css/Gear-256.png" height="42" width="42">
+    </div>
+    <script src="./js/renderer.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

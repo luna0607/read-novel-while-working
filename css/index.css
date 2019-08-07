@@ -1,0 +1,31 @@
+body {
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    margin: 0;
+    padding: 10px;
+  }
+body .bgDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: black;
+    color: lightskyblue;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 18px;
+    display: flex;
+  }
+.innerText{
+  margin:3% 0 3% 3%;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+#settingsButton{
+    margin:3% 3% 3% 0;
+}
